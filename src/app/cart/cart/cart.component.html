@@ -1,0 +1,8 @@
+<p>Carrito de compras</p>
+<div *ngFor ="let item of items">
+    <h2>{{item.title}}</h2>
+    <p>{{item.price}}</p>
+    <button (click)="deleteProduct(item)">Delete</button>
+</div>
+<button (click)="cleanCart()">Clear</button>
+<a [routerLink] = "['/checkout']" >Checkout</a>
