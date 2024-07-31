@@ -7,6 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ProductService {
+  //Comentario de prueba git
   // private productsList:Product[] = [
   //   {id:1, name: 'producto 1', description: 'Descripcion producto 1', price: 100, imageUrl:'../assets/images/Product1.jpeg'},
   //   {id:2, name: 'producto 2', description: 'Descripcion producto 2', price: 200, imageUrl:'../assets/images/Product2.jpeg'}
@@ -38,6 +39,7 @@ export class ProductService {
   getProductById(id: number): Observable <Product>{
     return this.http.get<Product>(`${this.apiUrl}/${id}`);
   }
+
 
 
 }
