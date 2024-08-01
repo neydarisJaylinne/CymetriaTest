@@ -16,32 +16,15 @@ export class ProductListComponent {
   productId!: number;
   selectedProduct: Product | undefined;
   productList: Product[] = [];
-  // constructor(private productService: ProductService, private cartService: CartService) { }
-
-  // ngOnInit(): void {
-  //   this.productList = this.productService.getProducts();
-  // }
-
-  // addToCart(product: any) {
-  //   console.log('agregado: ' + product.name);
-  //   this.cartService.addToCart(product);
-  //   window.alert('Agregaste el producto: ' + product.name)
-  // }
-
-  // getProductById() {
-  //   if (this.productId) {
-  //     this.selectedProduct = this.productService.getProductsById(this.productId);
-  //   }
-  // }
 
   constructor(private productService: ProductService, private cartService: CartService) { }
-
+  // Instrucciones al iniciar el componente
   ngOnInit(): void {
     this.productService.getProducts().subscribe((data: Product[]) => {
       this.productList = data;
     });
   }
-
+  // Obtener el producto por ID
   getProductById() {
     console.log("geting...");
     if (this.productId) {
@@ -50,7 +33,7 @@ export class ProductListComponent {
       });
     }
   }
-
+  // Agregar al carrito el producto seleccionado
   addToCart(product: any) {
     console.log('agregado: ' + product.title);
     this.cartService.addToCart(product);
