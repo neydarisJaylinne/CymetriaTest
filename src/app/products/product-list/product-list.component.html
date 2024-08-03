@@ -1,0 +1,46 @@
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let product of productList">
+                <div class="card mb-4" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">{{product.title}}</h2>
+                        <p class="card-text">{{product.description}}</p>
+                        <p class="card-text">{{product.price}}</p>
+                        <button (click)="addToCart(product)" class="btn btn-primary">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              
+                    <input type="number" [(ngModel)]="productId" placeholder="Enter product Id">
+                    <button (click)="getProductById()">Search</button>
+                
+            </div>
+          </div>
+        </div>
+      </nav>
+
+
+
+<div *ngIf="selectedProduct">
+    <h2>Name: {{selectedProduct.title}}</h2>
+    <p>Description: {{selectedProduct.description}}</p>
+    <p>Price: ${{selectedProduct.price}}</p>
+    <img [src]="selectedProduct.image" alt="{{selectedProduct.title}}">
+</div>
+
+<div>
+    <a [routerLink]="['cart']">Ver Carrito</a>
+</div>

@@ -1,0 +1,13 @@
+ /* .products{
+ position: relative;
+ align-items: center;
+ padding: 5%;  
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr 1fr; 
+ grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+ 
+}
+
+.card{
+    border: 2px solid  rgb(48, 48, 103);
+}  */
