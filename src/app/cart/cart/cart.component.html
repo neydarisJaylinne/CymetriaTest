@@ -1,0 +1,9 @@
+<h1>Carrito</h1>
+<div *ngFor="let item of items">
+    <h2>{{item.title}}</h2>
+    <h6>{{item.price}}</h6>
+    <button (click)="deleteProduct(item)">Eliminar</button>
+</div>
+<button (click)="cleanCart()">Limpiar</button>
+<a [routerLink]="['/home']">SeguirComprando</a>
+<a [routerLink]="['/checkout']">Completar Compra</a>
