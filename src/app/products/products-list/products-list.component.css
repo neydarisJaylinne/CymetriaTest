@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('https://us.123rf.com/450wm/credevlop/credevlop2302/credevlop230200011/198334597-un-gran-grupo-de-gatos-con-diferentes-colores-dibujos-animados-de-personajes-de-gatos-patrones-sin.jpg?ver=6');
+  background-size: cover; /* Asegura que la imagen cubra toda la vista */
+  background-position: center; /* Centra la imagen en la vista */
+  background-attachment: fixed; /* Hace que el fondo no se mueva al hacer scroll */
+  height: 100%; /* Ocupa al menos toda la altura de la ventana del navegador */
+  width: 100%; /* Ocupa toda la anchura de la ventana del navegador */
+}
+
+
+.card {
+  border: 1px solid #ccc;
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  background-color: #f8f9fa;
+}
+
+
+.card-body {
+  padding: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-text {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.card-subtitle {
+  font-size: 18px;
+  color: #666;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+a {
+  font-size: 40px;
+  color: #ff5100;
+  font-style: bold;
+  text-decoration: none;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
