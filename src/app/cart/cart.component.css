@@ -1,0 +1,33 @@
+.cart-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .cart-image {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .btn-back {
+    background-color: #0056b3; /* Azul clarito */
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.btn-back i {
+    margin-right: 8px; /* Espacio entre el ícono y el texto */
+}
+
+/* Efecto hover */
+.btn-back:hover {
+    background-color: #0066b3; /* Azul un poco más oscuro */
+}
+
+  
