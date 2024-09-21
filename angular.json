@@ -3,7 +3,11 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
+<<<<<<< HEAD
     "proyect_cy": {
+=======
+    "Cymetria-Angular-Proyect": {
+>>>>>>> eecf7b52b4a2d174365bda98b104d55a042e91a4
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -11,16 +15,25 @@
       "prefix": "app",
       "architect": {
         "build": {
+<<<<<<< HEAD
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/proyect_cy",
             "index": "src/index.html",
             "main": "src/main.ts",
+=======
+          "builder": "@angular-devkit/build-angular:application",
+          "options": {
+            "outputPath": "dist/cymetria-angular-proyect",
+            "index": "src/index.html",
+            "browser": "src/main.ts",
+>>>>>>> eecf7b52b4a2d174365bda98b104d55a042e91a4
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
+<<<<<<< HEAD
               "src/favicon.ico",
               "src/assets"
             ],
@@ -28,12 +41,29 @@
               "src/styles.css"
             ],
             "scripts": []
+=======
+              {
+                "glob": "**/*",
+                "input": "public"
+              },
+              "src/assets"
+            ],
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles.css"
+            ],
+            "scripts": [
+              "node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
+>>>>>>> eecf7b52b4a2d174365bda98b104d55a042e91a4
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
+<<<<<<< HEAD
                   "maximumWarning": "500kb",
                   "maximumError": "1mb"
                 },
@@ -41,17 +71,32 @@
                   "type": "anyComponentStyle",
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
+=======
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kB",
+                  "maximumError": "4kB"
+>>>>>>> eecf7b52b4a2d174365bda98b104d55a042e91a4
                 }
               ],
               "outputHashing": "all"
             },
             "development": {
+<<<<<<< HEAD
               "buildOptimizer": false,
               "optimization": false,
               "vendorChunk": true,
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+=======
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+>>>>>>> eecf7b52b4a2d174365bda98b104d55a042e91a4
             }
           },
           "defaultConfiguration": "production"
@@ -60,19 +105,30 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
+<<<<<<< HEAD
               "browserTarget": "proyect_cy:build:production"
             },
             "development": {
               "browserTarget": "proyect_cy:build:development"
+=======
+              "buildTarget": "Cymetria-Angular-Proyect:build:production"
+            },
+            "development": {
+              "buildTarget": "Cymetria-Angular-Proyect:build:development"
+>>>>>>> eecf7b52b4a2d174365bda98b104d55a042e91a4
             }
           },
           "defaultConfiguration": "development"
         },
         "extract-i18n": {
+<<<<<<< HEAD
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "proyect_cy:build"
           }
+=======
+          "builder": "@angular-devkit/build-angular:extract-i18n"
+>>>>>>> eecf7b52b4a2d174365bda98b104d55a042e91a4
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
@@ -83,8 +139,15 @@
             ],
             "tsConfig": "tsconfig.spec.json",
             "assets": [
+<<<<<<< HEAD
               "src/favicon.ico",
               "src/assets"
+=======
+              {
+                "glob": "**/*",
+                "input": "public"
+              }
+>>>>>>> eecf7b52b4a2d174365bda98b104d55a042e91a4
             ],
             "styles": [
               "src/styles.css"
@@ -96,6 +159,10 @@
     }
   },
   "cli": {
+<<<<<<< HEAD
     "analytics": "d57b21c3-a4d8-46b7-b1e7-6acdee2f0310"
+=======
+    "analytics": "246e0874-1044-4bec-89ad-8eddefe3cd36"
+>>>>>>> eecf7b52b4a2d174365bda98b104d55a042e91a4
   }
 }

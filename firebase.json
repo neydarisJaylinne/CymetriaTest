@@ -1,6 +1,10 @@
 {
   "hosting": {
+<<<<<<< HEAD
     "public": "dist/proyect_cy",
+=======
+    "public": "dist/cymetria-angular-proyect/browser",
+>>>>>>> eecf7b52b4a2d174365bda98b104d55a042e91a4
     "ignore": [
       "firebase.json",
       "**/.*",

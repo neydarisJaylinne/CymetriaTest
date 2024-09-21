@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # ProyectCy
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.0.
+=======
+# CymetriaAngularProyect
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.1.0.
+>>>>>>> eecf7b52b4a2d174365bda98b104d55a042e91a4
 
 ## Development server
 
@@ -24,4 +30,8 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ## Further help
 
+<<<<<<< HEAD
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+>>>>>>> eecf7b52b4a2d174365bda98b104d55a042e91a4
